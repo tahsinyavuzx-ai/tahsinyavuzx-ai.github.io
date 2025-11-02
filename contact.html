@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tahsin Yavuz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Tahsin Yavuz</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Feel free to reach out for collaborations, questions, or opportunities</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>I'm always interested in hearing about new opportunities and projects in quantitative finance and economics. Don't hesitate to get in touch!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=100" alt="Email Icon">
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:tahsinyavuzx@gmail.com">tahsinyavuzx@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=100" alt="LinkedIn Icon">
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/tahsin-yavuz-699a00371/" target="_blank">Connect with me</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=100" alt="Location Icon">
+                            <div>
+                                <h3>Availability</h3>
+                                <p>Open to remote opportunities and collaborations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback-type">Type of Inquiry</label>
+                            <select id="feedback-type" name="feedback-type">
+                                <option value="general">General Inquiry</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="question">Question</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map or Additional Info Section -->
+    <section class="additional-info">
+        <div class="container">
+            <h2>Why Connect?</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>📊 Data & Analysis</h3>
+                    <p>Passionate about quantitative methods and data-driven decision making</p>
+                </div>
+                <div class="info-card">
+                    <h3>💼 Professional Growth</h3>
+                    <p>Always looking to learn and grow through meaningful collaborations</p>
+                </div>
+                <div class="info-card">
+                    <h3>🤝 Networking</h3>
+                    <p>Building connections with like-minded professionals in finance and economics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tahsin Yavuz. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tahsin-yavuz-699a00371/" target="_blank">LinkedIn</a>
+            <a href="mailto:tahsinyavuzx@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
